@@ -1,6 +1,6 @@
 const container = document.getElementById('container');
 let counter = 0, score = 0, data = [], done = false;
-fetch("https://kadamyash.github.io/probablyquiz/data/data.json")
+fetch('..data/data.json')
 .then(response => {
    return response.json();
 })
