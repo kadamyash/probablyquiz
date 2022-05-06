@@ -1,6 +1,6 @@
 const container = document.getElementById('container');
 let counter = 0, score = 0, data = [], done = false;
-fetch("../data/data.json")
+fetch("./data/data.json")
 .then(response => {
    return response.json();
 })
