@@ -5,7 +5,7 @@ fetch("../data/data.json")
    return response.json();
 })
 .then(jsondata => render(data = jsondata));
-
+console.log(data);
 function render(jsondata){
     document.getElementById('question').innerHTML = jsondata[counter].question;
     let options = jsondata[counter].choices;
