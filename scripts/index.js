@@ -1,11 +1,10 @@
 const container = document.getElementById('container');
 let counter = 0, score = 0, data = [], done = false;
-fetch('..data/data.json')
+fetch('../data/data.json')
 .then(response => {
    return response.json();
 })
 .then(jsondata => render(data = jsondata));
-console.log("json"+data);
 function render(jsondata){
     document.getElementById('question').innerHTML = jsondata[counter].question;
     let options = jsondata[counter].choices;
