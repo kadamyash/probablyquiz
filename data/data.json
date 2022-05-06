@@ -1,0 +1,72 @@
+[
+    {
+        "question": "What is the capital of India?",
+        "choices" :
+        [
+            {"name": "Delhi", "valid": true},
+            {"name": "Mumbai", "valid": false},
+            {"name": "Kolkata", "valid": false},
+            {"name": "Bangalore", "valid": false}
+        ]
+    },
+    {
+        "question": "What is the capital of Spain?",
+        "choices" :
+        [
+            {"name": "Madrid", "valid": true},
+            {"name": "Rome", "valid": false},
+            {"name": "Valencia", "valid": false},
+            {"name": "Barcelona", "valid": false}
+        ]
+    },
+    {
+        "question": "Which of the following numbers is an Armstrong Number?",
+        "choices" :
+        [
+            {"name": "407", "valid": true},
+            {"name": "351", "valid": false},
+            {"name": "403", "valid": false},
+            {"name": "135", "valid": false}
+        ]
+    },
+    {
+        "question": "Which of the following planets is the closest to Earth?",
+        "choices" :
+        [
+            {"name": "Venus", "valid": true},
+            {"name": "Mercury", "valid": false},
+            {"name": "Mars", "valid": false},
+            {"name": "Jupiter", "valid": false}
+        ]
+    },
+    {
+        "question": "What is a baby goat called?",
+        "choices" :
+        [
+            {"name": "A Kid", "valid": true},
+            {"name": "A Foal", "valid": false},
+            {"name": "A Lamb", "valid": false},
+            {"name": "A Calf", "valid": false}
+        ]
+    },
+    {
+        "question": "Which one of the following nuts are used to make Marzipan?",
+        "choices" :
+        [
+            {"name": "Almonds", "valid": true},
+            {"name": "Marzinuts", "valid": false},
+            {"name": "Walnuts", "valid": false},
+            {"name": "Deez Nuts", "valid": false}
+        ]
+    },
+    {
+        "question": "Which of the following countries invented Ice-Cream?",
+        "choices" :
+        [
+            {"name": "China", "valid": true},
+            {"name": "Scotland", "valid": false},
+            {"name": "Iceland", "valid": false},
+            {"name": "Turkey", "valid": false}
+        ]
+    }
+]

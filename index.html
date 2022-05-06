@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <section class="container">
+        <div id="question" class="question">...</div>
+        <div class="choices">
+            <div id="ch_a" class="choice" onclick="lockIn('ch_a')">...</div>
+            <div id="ch_b" class="choice" onclick="lockIn('ch_b')">...</div>
+            <div id="ch_c" class="choice" onclick="lockIn('ch_c')">...</div>
+            <div id="ch_d" class="choice" onclick="lockIn('ch_d')">...</div>
+        </div>
+        <div class="infoboard">
+            <div class="score" id="score">NA</div>
+            <div class="progressbar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal hidden">
+            <div class="modal-box">
+                <div id="modal-statement">Something went wrong...</div>
+                <div class="btn" onclick="hideModal()">Close</div>
+            </div>
+    </div>
+</body>
+</html>
