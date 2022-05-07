@@ -111,6 +111,17 @@ body{
     margin: 24px auto;
 }
 
+.infoboard .record{
+    display: flex;
+    flex-direction: row;
+    margin: 24px auto
+}
+
+.deviceBest{
+    font-weight: 500;
+    margin: 0 10px;
+}
+
 .progressbar{
     margin: 24px auto;
     width: 80%;
@@ -124,12 +135,37 @@ body{
 .progress{
     width: 0%;
     height: 100%;
+    transition: all 700ms linear;
     background-color: #505050;
 }
 
 .score{
     font-size: 24px;
     font-weight: 700;
+}
+
+#points{
+    font-weight: 500;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row;
+}
+
+.controls div{
+    margin: 0 10px;
+}
+
+.reset{
+    background-color: red;
+    color: white;
+}
+
+.reset:hover{
+    background-color: #efefef;
+    color: black;
+    border: 1px solid red;
 }
 
 /* mobile responsive */

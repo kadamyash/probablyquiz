@@ -19,6 +19,9 @@ function render(jsondata){
     document.getElementById('ch_d').setAttribute('valid', options[3].valid);
     document.getElementById('score').innerHTML = score;
     document.getElementById('progress').style.width = ((counter+1)*100/data.length)+"%";
+    if(localStorage.getItem('deviceBest')){
+        document.getElementById('deviceBest').innerHTML = localStorage.getItem('deviceBest');
+    }
 }
 
 function lockIn(id){
@@ -45,9 +48,42 @@ function displayModal(result){
     counter = (counter<data.length-1?counter=counter+1:(counter==data.length-1?(done=true, counter):counter));
     document.getElementById('progress').style.backgroundColor = (done?'green':null)
     render(data);
+    console.log(counter);
+    if(done){
+        document.getElementById('modalBtn').onclick = renderScore;
+    }
     document.getElementById('modal').classList.toggle('hidden');
 }
 
 function hideModal(){
     document.getElementById('modal').classList.toggle('hidden');
+}
+
+function hideResults(){
+    if(score>localStorage.getItem('deviceBest')){
+        localStorage.setItem('deviceBest', score);
+    }
+    else if(localStorage.getItem('deviceBest')===undefined){
+        localStorage.setItem('deviceBest', score);
+    }
+    document.getElementById('resultModal').classList.toggle('hidden');
+    reset();
+}
+
+function reset(){
+    score = 0;
+    counter = 0;
+    done = false;
+    render(data);
+}
+
+function renderScore(){
+    document.getElementById('modal').classList.toggle('hidden');
+    document.getElementById('points').innerHTML = score;
+    document.getElementById('resultModal').classList.toggle('hidden');
+}
+
+function clearBest(){
+    localStorage.removeItem('deviceBest');
+    document.getElementById('deviceBest').innerHTML = 'N.A';
 }

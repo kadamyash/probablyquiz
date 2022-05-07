@@ -19,18 +19,30 @@
             <div id="ch_d" class="choice" onclick="lockIn('ch_d')">...</div>
         </div>
         <div class="infoboard">
-            <div class="score" id="score">NA</div>
+            <div class="score" id="score">N.A</div>
+            <span class="record">Personal Best <div class="deviceBest" id="deviceBest">N.A</div></span>
             <div class="progressbar">
                 <div class="progress" id="progress"></div>
             </div>
+        </div>
+        <div class="controls">
+            <div class="btn" onclick="clearBest()">Clear Best Record</div>
+            <div class="btn reset" onclick="reset()">RESET</div>
         </div>
     </section>
 
     <div id="modal" class="modal hidden">
             <div class="modal-box">
                 <div id="modal-statement">Something went wrong...</div>
-                <div class="btn" onclick="hideModal()">Close</div>
+                <div id="modalBtn" class="btn" onclick="hideModal()">Close</div>
             </div>
+    </div>
+
+    <div id="resultModal" class="modal hidden">
+        <div class="modal-box">
+            <div>Your current score was <div id="points">...</div> points out of 100</div>
+            <div class="btn" onclick="hideResults()">Close</div>
+        </div>
     </div>
 </body>
 </html>
