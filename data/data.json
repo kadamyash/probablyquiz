@@ -68,5 +68,35 @@
             {"name": "Iceland", "valid": false},
             {"name": "Turkey", "valid": false}
         ]
+    },
+    {
+        "question": "Which of the following is a fruit?",
+        "choices" :
+        [
+            {"name": "Eggplant", "valid": true},
+            {"name": "Beetroot", "valid": false},
+            {"name": "Potato", "valid": false},
+            {"name": "Onion", "valid": false}
+        ]
+    },
+    {
+        "question": "Where is the world's largest IKEA store located?",
+        "choices" :
+        [
+            {"name": "Philippines", "valid": true},
+            {"name": "Finland", "valid": false},
+            {"name": "Canada", "valid": false},
+            {"name": "Korea", "valid": false}
+        ]
+    },
+    {
+        "question": "Which of the following is a type of cheese",
+        "choices" :
+        [
+            {"name": "Camambert", "valid": true},
+            {"name": "Margarine", "valid": false},
+            {"name": "Mayonnaise", "valid": false},
+            {"name": "Nutella", "valid": false}
+        ]
     }
 ]
