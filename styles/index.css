@@ -169,7 +169,7 @@ body{
 }
 
 .footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     display: flex;
     padding: 1em;
