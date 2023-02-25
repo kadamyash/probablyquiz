@@ -168,6 +168,22 @@ body{
     border: 1px solid red;
 }
 
+.footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100vw;
+    color: white;
+    background: rgba(15,15,15,0.8);
+}
+
+.hyperlink, .hyperlink:visited{
+    color: inherit;
+    margin: 0 4px;
+}
+
 /* mobile responsive */
 
 @media screen and (max-width: 700px){
